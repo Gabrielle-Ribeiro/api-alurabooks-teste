@@ -25,6 +25,8 @@ function usuarioExiste({ email, senha }) {
   return userdb.usuarios.findIndex(user => user.email === email && user.senha === senha) !== -1
 }
 
+
+
 function emailExiste(email) {
   return userdb.usuarios.findIndex(user => user.email === email) !== -1
 }
